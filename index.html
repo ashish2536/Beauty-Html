@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/fonts/sans/stylesheet.css">
+    <style>
+        .pink-color {
+            color: #C62C60;
+        }
+
+        .black-color {
+            color: #3C3E3C;
+        }
+
+        .gray {
+            color: #7C7A7A;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans';
+        }
+    </style>
+</head>
+
+<body class="bg-pink-50">
+    <nav class="bg-pink-50 shadow-sm">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <!-- Logo -->
+            <div class="text-lg font-bold">
+                <span class="text-gray-800">DESIGNER </span>
+                <span class="text-pink-500">BEAUTY</span>
+            </div>
+
+            <!-- Hamburger Menu (Mobile) -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul id="menu" class="hidden md:flex space-x-6 text-gray-700 font-medium">
+                <li>
+                    <a href="index.html" class="text-pink-500">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" class="hover:text-pink-500">About Us</a>
+                </li>
+                <li>
+                    <a href="service.html" class="hover:text-pink-500">Services</a>
+                </li>
+                <li>
+                    <a href="gallery.html" class="hover:text-pink-500">Gallery</a>
+                </li>
+                <li>
+                    <a href="blog.html" class="hover:text-pink-500">Blog</a>
+                </li>
+            </ul>
+
+            <!-- Contact Now Button -->
+            <a href="contact-us.html"
+                class="hidden md:block bg-pink-500 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition">
+                Contact Now
+            </a>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-pink-50 p-4">
+            <ul class="space-y-4 text-gray-700 font-medium">
+                <li>
+                    <a href="home.html" class="text-pink-500">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" class="hover:text-pink-500">About Us</a>
+                </li>
+                <li>
+                    <a href="service.html" class="hover:text-pink-500">Services</a>
+                </li>
+                <li>
+                    <a href="gallery.html" class="hover:text-pink-500">Gallery</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-pink-500">Blog</a>
+                </li>
+                <li>
+                    <a href="#" class="block bg-pink-500 text-white py-2 px-4 rounded-lg hover:bg-pink-600 transition">
+                        Contact Now
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- BANNER -->
+    <section class="banner py-[100px]">
+        <div class="container mx-auto relative">
+            <img src="./assets/image/Beauty.png" alt="" class="w-[70%] absoute top-[-10%] left-[-12%]"
+                style="z-index: -1;">
+            <div class="flex">
+                <div class="w-1/2">
+                    <div class="banner-image ml-[120px] relative">
+                        <img src="./assets/image/Beauty intuition.png" alt="" class="absolute top-[30%] left-[-10%]">
+                        <img src="./assets/image/BANNER-MAIN.png" alt="banner img" class="w-[90%] h-[60%] block" />
+                    </div>
+                </div>
+                <div class="w-1/2">
+                    <div class="banner-content relative">
+                        <h1 class="text-[120px] pt-[70px] black-color font-extrabold"><span
+                                class="pink-color font-normal">LEARN</span> PERFECT LOOK</h1>
+                        <button class="bg-pink-500 border py-3 px-5 ml-2 text-white">Book Now</button>
+                        <img src="./assets/image/pngwing.png" class="absolute bottom-[-30%] right-[10%]" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRAINING -->
+    <section class="training py-[100px]">
+        <div class="container mx-auto">
+            <div class="flex">
+                <div class="w-[60%]">
+                    <div class="training-content relative">
+                        <h2 class="text-7xl font-bold black-color">GLOBAL <span class="pink-color">TRAINING</span></h2>
+                        <p class="gray py-[25px] max-w-[800px] text-2xl">Featuring a creamy,see to whipped we see
+                            texture,a this
+                            highilghter uses light-reflecting
+                            pearls to help diffuse the beautifully radiant glow.</p>
+                        <p class="gray max-w-[800px] text-2xl">Either chemical – such as the use of fruit acids,we cane
+                            can
+                            aherbal peels – or mechanical –
+                            such as Each facial is We to a finished with soothing & revitalizing aromatherapy oils and a
+                            see aa custom-formulated see mask tailored to your skin. microdermabrasion or even complete
+                            facial.</p>
+                        <button class="bg-pink-500 border py-3 px-5 my-[50px] text-white">Read More</button>
+                        <img src="./assets/image/t1.png" alt="" class="w-[40%] h-[10%] block">
+                        <img src="./assets/image/t-b.png" alt="" class="absolute bottom-[-2%] right-[59%] w-[20%]"
+                            style="z-index: -1;">
+                    </div>
+                </div>
+                <div class=" w-[40%]">
+                    <div class="training-image relative">
+                        <img src="./assets/image/t-main.png" alt="">
+                        <img src="./assets/image/t-2.png" alt="" class="absolute bottom-[10%] right-[85%] w-[30%]">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES  -->
+    <section class="services py-[90px]">
+        <div class="container mx-auto">
+            <div class="services-title">
+                <h2 class="text-6xl font-bold black-color pl-10">OUR SERVICES WILL MAKE <br> <span
+                        class="pink-color">YOU GLOW</span></h2>
+            </div>
+            <div class="flex">
+                <div class="w-1/4">
+                    <div class="glow-img">
+                        <img src="./assets/image/g1.png" alt="">
+                    </div>
+                </div>
+                <div class="w-1/4">
+                    <div class="glow-img">
+                        <img src="./assets/image/g2.png" alt="">
+                    </div>
+                </div>
+                <div class="w-1/4">
+                    <div class="glow-img">
+                        <img src="./assets/image/g3.png" alt="">
+                    </div>
+                </div>
+                <div class="w-1/4">
+                    <div class="glow-img">
+                        <img src="./assets/image/g4.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="service-button text-center my-[50px]">
+                <button class="text-xl bg-pink-500 border py-3 px-5 ml-2 text-white">←</button>
+                <button class="text-xl bg-pink-500 border py-3 px-5 ml-2 text-white">→</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY  -->
+    <section class="gallery">
+        <div class="container mx-auto">
+            <div class="gallery-title">
+                <h2 class="text-5xl font-bold black-color pl-10 text-center">STYLE IS A REFLECTION OF <span
+                        class="pink-color">YOUR ATTITUDE</span></h2>
+                <p class="gray text-center text-[20px] py-5 px-[150px]" style="margin: 0 auto;">"Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore Ut enim ad minim to a veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+            <div class="gallery-image py-5 text-center">
+                <img src="./assets/image/gallery-all.png" alt="">
+                <button class="bg-pink-500 border py-2 px-4 ml-2 text-white mt-[30px]">View More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center py-[100px]">
+        <div class="gallery-back h-[400px]"
+            style="background-image: url(./assets/image/Group\ 1000005660.png);background-repeat: no-repeat;">
+            <h2 class="text-3xl font-bold text-white py-[130px]">YOUR COMPLETE HAIR HEALTHY GUIDE & <br> OUR WORKING
+                PROCESS</h2>
+            <button class="bg-pink-500 border-8 py-2 px-4 text-white">▶</button>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+
+    <section class="testimonial">
+        <div class="container mx-auto">
+            <div class="flex">
+                <div class="w-2/5">
+                    <div class="testimonial-content">
+                        <img src="./assets/image/testimonial.png" alt="" class="w-[15%] pb-5 block">
+                        <h2 class="text-5xl font-bold black-color text-center inline-block py-6">OUR <span
+                                class="pink-color">CUSTOMERS</span> </h2>
+                        <p class="gray text-2xl">It is a long established fact that the by a reader will be distracted
+                            when looking at its layout.</p>
+                        <div class="flex mt-8 space-x-4">
+                            <button class="w-10 h-10 bg-pink-600 text-white flex items-center justify-center">
+                                <span>&larr;</span>
+                            </button>
+                            <button class="w-10 h-10 bg-pink-600 text-white flex items-center justify-center">
+                                <span>&rarr;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="flex justify-center space-x-4">
+                        <div class="w-1/3 bg-white shadow-md border border-pink-800 p-6 rounded-lg">
+                            <p class="gray">
+                                Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Donec sed erat vel tortor
+                                aliquam ornare.
+                                Vestibulum bla ndit lorem non sodales molestie. Phas ellus nec finibus nulla.
+                            </p>
+                            <div class="flex items-center mt-4">
+                                <img src="./assets/image/testimonal-1.png" alt="Customer Photo"
+                                    class="w-10 h-10 rounded-full">
+                                <div class="ml-3">
+                                    <h4 class="text-sm font-semibold text-gray-800">Jaxson Torff</h4>
+                                    <span class="text-xs text-gray-500">Co-Founder</span>
+                                </div>
+                            </div>
+                            <div class="mt-2 text-gray-400 text-sm">#01</div>
+                        </div>
+
+                        <div class="w-1/3 bg-white shadow-md border border-pink-800 p-6 rounded-lg">
+                            <p class="gray">
+                                Lorem ipsum dolor sit amet, consecte tur adipiscing elit. Donec sed erat vel tortor
+                                aliquam ornare.
+                                Vestibulum bla ndit lorem non sodales molestie. Phas ellus nec finibus nulla.
+                            </p>
+                            <div class="flex items-center mt-4">
+                                <img src="./assets/image/testimonal-2.png" alt="Customer Photo"
+                                    class="w-10 h-10 rounded-full">
+                                <div class="ml-3">
+                                    <h4 class="text-sm font-semibold text-gray-800">Jaxson Torff</h4>
+                                    <span class="text-xs text-gray-500">Co-Founder</span>
+                                </div>
+                            </div>
+                            <div class="mt-2 text-gray-400 text-sm">#01</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- NEWS FEED -->
+    <section class="news py-[100px]">
+        <div class="container mx-auto">
+            <div class="news-title text-center">
+                <h2 class="text-5xl font-bold pb-5">LATEST <span class="pink-color">NEWS FEED</span></h2>
+                <p class="gray text-2xl px-[150px]">"Lorem ipsum dolor sit amet, incididunt ut labore et dolore Ut enim
+                    ad minim to a veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 py-[50px]">
+                <div class="bg-white shadow-md rounded-lg overflow-hidden border border-gray-200">
+                    <img src="./assets/image/n-1.png" alt="News Image" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <span class="bg-pink-600 text-white text-sm px-3 py-1 rounded absolute top-4 right-4">20
+                            APR</span>
+                        <h3 class="text-lg font-semibold text-gray-800 mt-2">
+                            We Giving Amazing Special Spa And Message Service for Vip
+                        </h3>
+                        <p class="text-pink-600 text-sm font-bold mt-2">SKIN TREATMENT</p>
+                        <a href="#" class="text-pink-600 text-sm mt-4 inline-flex items-center">
+                            Read More <span class="ml-1">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-md rounded-lg overflow-hidden border border-gray-200">
+                    <img src="./assets/image/n-2.png" alt="News Image" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <span class="bg-pink-600 text-white text-sm px-3 py-1 rounded absolute top-4 right-4">15
+                            APR</span>
+                        <h3 class="text-lg font-semibold text-gray-800 mt-2">
+                            House is a place where people come see them
+                        </h3>
+                        <p class="text-gray-600 text-sm mt-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore Ut enim.
+                        </p>
+                        <p class="text-pink-600 text-sm font-bold mt-2">SKIN TREATMENT</p>
+                        <a href="#" class="text-pink-600 text-sm mt-4 inline-flex items-center">
+                            Read More <span class="ml-1">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-md rounded-lg overflow-hidden border border-gray-200">
+                    <img src="./assets/image/n-3.png" alt="News Image" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <span class="bg-pink-600 text-white text-sm px-3 py-1 rounded absolute top-4 right-4">20
+                            APR</span>
+                        <h3 class="text-lg font-semibold text-gray-800 mt-2">
+                            Till the one day when the lady met this fellow
+                        </h3>
+                        <p class="text-pink-600 text-sm font-bold mt-2">SKIN TREATMENT</p>
+                        <a href="#" class="text-pink-600 text-sm mt-4 inline-flex items-center">
+                            Read More <span class="ml-1">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- View All Button -->
+            <div class="flex justify-center mt-10">
+                <a href="#" class="px-6 py-3 bg-pink-600 text-white text-sm font-bold">
+                    View All
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONSULTATIONS -->
+    <section class="consulations pb-[50px]">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gray-300 rounded-lg translate-x-3 translate-y-3"></div>
+                    <img src="./assets/image/Rectangle 500.png" alt="Gift Card" class="relative rounded-lg w-[100%]" />
+                </div>
+                <!-- Text Section -->
+                <div class="text-center md:text-left pl-8">
+                    <h2 class="text-5xl font-bold text-gray-800 mb-4">
+                        CONSULTATIONS ARE <br><span class="text-pink-500">COMPLIMENTARY</span>
+                    </h2>
+                    <p class="text-2xl text-gray-600 mb-6 max-w-[900px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore Ut enim ad minim to aA veniam, quis nostrud exercitation ullamco.
+                    </p>
+                </div>
+            </div>
+    </section>
+
+    <!-- CERTIFIED -->
+    <section class="certified py-[50px]">
+        <div class="certified-title text-center">
+            <h2 class="text-5xl font-bold pb-5">MEET CERTIFIED <span class="pink-color">THERAPIST</span></h2>
+            <p class="gray text-2xl px-[350px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et
+                dolore Ut enim ad minim to </p>
+        </div>
+
+        <div class="flex justify-center items-center py-[50px]">
+            <div class="grid grid-cols-5 gap-4">
+                <img alt="Portrait of a smiling woman in a business suit" class="rounded-lg" height="200"
+                    src="https://storage.googleapis.com/a1aa/image/SKq6hwfmfYsoFUzLkWwkOsgG4c9JoGmTvtoY4SBAPQagBr1TA.jpg"
+                    width="200" />
+                <img alt="Portrait of a confident woman in a gray suit" class="rounded-lg" height="200"
+                    src="https://storage.googleapis.com/a1aa/image/oOEjJIMaHULJAVADzSjpZ3ZAQh5HfeGUsvR1V987I3JjBr1TA.jpg"
+                    width="200" />
+                <div class="bg-pink-100 p-4 rounded-lg">
+                    <img alt="Portrait of Jenny Wilson, a trainer" class="rounded-lg" height="200"
+                        src="https://storage.googleapis.com/a1aa/image/Wk5A9gB2QJ60ER6Nq8DFm0Jea73fWq1WxKSOHP2Uek4DDWrnA.jpg"
+                        width="300" />
+                    <div class="text-center mt-4">
+                        <h2 class="text-xl font-bold text-gray-800">
+                            Jenny Wilson
+                        </h2>
+                        <p class="text-gray-600">
+                            Trainer
+                        </p>
+                    </div>
+                </div>
+                <img alt="Portrait of a woman in a black suit" class="rounded-lg" height="200"
+                    src="https://storage.googleapis.com/a1aa/image/vo8aFMCNlN4fUiPLb6ft5INjYv2mCsCu0Un1hf1HG0c8CWrnA.jpg"
+                    width="200" />
+                <img alt="Portrait of a woman with blonde hair in a business suit" class="rounded-lg" height="200"
+                    src="https://storage.googleapis.com/a1aa/image/u0zvu98rlAoiFdhBr9vwxHgetieiHfpaGpLZ99yye3wfLYteE.jpg"
+                    width="200" />
+            </div>
+        </div>
+        <div class="service-button text-center my-[50px]">
+            <button class="text-xl bg-pink-500 border py-3 px-5 ml-2 text-white">←</button>
+            <button class="text-xl bg-pink-500 border py-3 px-5 ml-2 text-white">→</button>
+        </div>
+    </section>
+
+    <!-- FOOTER  -->
+    <footer class="bg-pink-100">
+        <div class="container mx-auto">
+            <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                    <div>
+                        <h2 class="text-pink-700 font-bold text-lg mb-4">CONTACT</h2>
+                        <p>8949 Reseda Blvd Suite<br>115 Northridge, CA 91324</p>
+                        <p>(907) 555-0101</p>
+                        <p>dbeautystudio@outlook.com</p>
+                    </div>
+                    <div>
+                        <h2 class="text-gray-800 font-bold text-lg mb-4">DESIGNER <span
+                                class="text-pink-700">BEAUTY</span></h2>
+                        <p>Lorem ipsum dolor sit will to aamet, to A consectetur adipiscing elit, ut labore et dolore Ut
+                            be minim to will veniam, quis nostrud enim.</p>
+                        <div class="flex justify-center mt-4 space-x-4">
+                            <a href="#" class="text-pink-700"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-pink-700"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-pink-700"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-pink-700 font-bold text-lg mb-4">OPEN HOURS</h2>
+                        <p>Monday to Friday : 09:00-20:00</p>
+                        <p>Saturday : 09:00-18:00</p>
+                        <p>Sunray : 09:00-18:00</p>
+                    </div>
+                </div>
+                <div class="border-t border-gray-300 mt-8 pt-4 text-center text-gray-600 text-sm">
+                    <p>© 2016 Skin Care by Chin Lee. All Rights Reserved.</p>
+                    <p>Health Department Approved Facility.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        const menuToggle = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuToggle.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>
